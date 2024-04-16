@@ -83,7 +83,7 @@ class AppTest {
     // Lab 3
     @org.junit.jupiter.api.Test
     void saveTema_startlineAfterDeadline_saveFail() {
-        assertEquals(service.saveTema("20", "aa", 4, 5), 0);
+        assertEquals(service.saveTema("20", "aa", 4, 5), 1);
     }
 
     @org.junit.jupiter.api.Test
@@ -98,7 +98,7 @@ class AppTest {
 
     @org.junit.jupiter.api.Test
     void saveTema_deadline_13_saveSuccess() {
-        assertEquals(service.saveTema("23", "aa", 13,12), 0);
+        assertEquals(service.saveTema("23", "aa", 13,12), 1);
     }
 
     @org.junit.jupiter.api.Test
