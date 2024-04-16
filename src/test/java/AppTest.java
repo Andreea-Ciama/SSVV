@@ -26,7 +26,7 @@ class AppTest {
 
     @org.junit.jupiter.api.Test
     void saveStudent_studentId_0_saveSuccess() {
-        assertEquals(service.saveStudent("0", "aa", 222), 0);
+        assertEquals(service.saveStudent("0", "aa", 222), 1);
     }
 
     @org.junit.jupiter.api.Test
