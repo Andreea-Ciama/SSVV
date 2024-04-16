@@ -36,12 +36,12 @@ class AppTest {
 
     @org.junit.jupiter.api.Test
     void saveStudent_studentId_maxInt_saveSuccess() {
-        assertEquals(service.saveStudent("maxint", "aa", 222), 0);
+        assertEquals(service.saveStudent("maxint", "aa", 222), 1);
     }
 
     @org.junit.jupiter.api.Test
     void saveStudent_studentId_10_saveSuccess() {
-        assertEquals(service.saveStudent("10", "aa", 222), 0);
+        assertEquals(service.saveStudent("10", "aa", 222), 1);
     }
 
     @org.junit.jupiter.api.Test
@@ -83,12 +83,12 @@ class AppTest {
     // Lab 3
     @org.junit.jupiter.api.Test
     void saveTema_startlineAfterDeadline_saveFail() {
-        assertEquals(service.saveTema("20", "aa", 4, 5), 1);
+        assertEquals(service.saveTema("20", "aa", 4, 5), 0);
     }
 
     @org.junit.jupiter.api.Test
     void saveTema_startlineBeforeDeadline_saveSuccess() {
-        assertEquals(service.saveTema("21", "aa", 4,3), 0);
+        assertEquals(service.saveTema("21", "aa", 4,3), 1);
     }
 
     @org.junit.jupiter.api.Test
